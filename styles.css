@@ -33,10 +33,10 @@ body {
 }
 
 .side-bar > div div {
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 21% 79%;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .side-bar > div + div {
@@ -50,11 +50,11 @@ body {
 
 .side-bar .dashboard img {
   width: 40px;
-  margin-right: -10px;
 }
 
 .side-bar .dashboard span {
   font-size: 1.5rem;
+  margin-left: 6px;
   cursor: pointer;
 }
 
