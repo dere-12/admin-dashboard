@@ -175,4 +175,100 @@ body {
   grid-column: 2 / 3;
   grid-row: 2;
   background-color: #e2e8f0;
+
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 72% 28%;
+  padding: 1.3rem 1rem 0px;
+  border-top: 3px solid rgba(0, 0, 0, 0.075);
+}
+
+.main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.3rem;
+}
+
+.main .cards .card {
+  height: 200px;
+  background-color: white;
+  border-left: 6px solid #f0b01b;
+  border-radius: 6px;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.main .cards .card div {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.5rem;
+}
+
+.main .cards .card div span {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.main .cards .card p {
+  font-size: 15px;
+  color: #757373;
+}
+
+.main .cards-container > p {
+  margin-bottom: 8px;
+}
+
+.main .right {
+  margin-right: 2rem;
+}
+
+.main .right .announcement {
+  background-color: white;
+  padding: 2rem;
+  margin: 8px 0px 2rem;
+  border-radius: 6px;
+}
+
+.main .right .announcement p {
+  font-size: 12px;
+  color: #757373;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.right .trending {
+  background-color: white;
+  padding: 1.3rem;
+  margin-top: 8px;
+}
+
+.right .trending > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.right .trending > div p + p {
+  color: #999898;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.right .trending img {
+  filter: invert(1);
+}
+
+.right .trending .blue {
+  background-color: #b8def5;
+}
+
+.right .trending .gray {
+  background-color: #999898;
+}
+
+.right .trending .pink {
+  background-color: #ff93a5;
 }
