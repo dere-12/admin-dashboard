@@ -60,6 +60,115 @@ body {
 
 .header {
   grid-column: 2;
+  padding: 10px 2rem;
+}
+
+.header section:first-child {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 1rem;
+}
+
+.header section:first-child p {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.header .search {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header .search input {
+  flex-basis: 92%;
+  height: 2rem;
+  background-color: #e2e8f0;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  color: rgb(4, 13, 51);
+  padding-left: 2rem;
+}
+
+.header .search input:focus {
+  border: 1px solid #1935d4;
+}
+
+.header section:first-child div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.header section:first-child div:last-child * {
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[src="assets/icons/panda.svg"] {
+  filter: invert(1);
+}
+
+.profile-pic.yellow {
+  background-color: #f9cc17;
+}
+
+.header section:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.header section:last-child div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header section:last-child div:first-child .profile-pic.yellow {
+  width: 60px;
+  height: 60px;
+}
+
+.header section:last-child div:first-child p {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.header section:last-child .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  justify-content: end;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.header section:last-child .buttons button {
+  background-color: #1992d4;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.header section:last-child .buttons button:hover {
+  background-color: #6378ee;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .main {
